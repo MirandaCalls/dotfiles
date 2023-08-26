@@ -4,6 +4,25 @@ dashboard.setup({
   theme = 'doom',
   config = {
     header = {
+      '',
+      '',
+      '      ________ ++     ________',
+      '     /VVVVVVVV\\++++  /VVVVVVVV\\',
+      '     \\VVVVVVVV/++++++\\VVVVVVVV/\'',
+      '      |VVVVVV|++++++++/VVVVV/\'',
+      '      |VVVVVV|++++++/VVVVV/\'',
+      '     +|VVVVVV|++++/VVVVV/\'+',
+      '   +++|VVVVVV|++/VVVVV/\'+++++',
+      ' +++++|VVVVVV|/VVV___++++++++++',
+      '   +++|VVVVVVVVVV/##/ +_+_+_+_',
+      '     +|VVVVVVVVV___ +/#_#,#_#,\'',
+      '      |VVVVVVV//##/+/#/+/#/\'/#/',
+      '      |VVVVV/\'+/#/+/#/+/#/ /#/',
+      '      |VVV/\'++/#/+/#/ /#/ /#/',
+      '      \'V/\'  /##//##//##//###/',
+      '               ++',
+      '',
+      '',
     },
     center = {
       { icon = '  ', desc = 'New file', action = 'enew' },
@@ -15,7 +34,8 @@ dashboard.setup({
   }
 })
 
-vim.api.nvim_set_hl(0, 'DashboardHeader', { fg = '#6272a4' })
-vim.api.nvim_set_hl(0, 'DashboardCenter', { fg = '#f8f8f2' })
+vim.api.nvim_set_hl(0, 'DashboardHeader', { fg = '#50fa7b' })
+vim.api.nvim_set_hl(0, 'DashboardIcon', { fg = '#bd93f9' })
+vim.api.nvim_set_hl(0, 'DashboardCenter', { fg = '#6272a4' })
 vim.api.nvim_set_hl(0, 'DashboardShortcut', { fg = '#bd93f9' })
 vim.api.nvim_set_hl(0, 'DashboardFooter', { fg = '#6272a4' })
