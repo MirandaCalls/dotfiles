@@ -27,13 +27,4 @@ endfunction
 let g:ale_root = {
 \ 'clangd': function('MyFindRoot')
 \}
-
-function! PhpSyntaxOverride()
-  hi! link phpType Keyword
-endfunction
-
-augroup phpSyntaxOverride
-  autocmd!
-  autocmd FileType php call PhpSyntaxOverride()
-augroup END
 ]])
