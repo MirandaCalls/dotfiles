@@ -32,6 +32,3 @@ vim.keymap.set('n', '<C-j>', ':move .+1<CR>==')
 vim.keymap.set('n', '<C-k>', ':move .-2<CR>==')
 vim.keymap.set('v', '<C-j>', ":move '>+1<CR>gv=gv")
 vim.keymap.set('v', '<C-k>', ":move '<-2<CR>gv=gv")
-
--- Navigate to and from code definitions
-vim.keymap.set('n', '<Leader>i', ':ALEGoToDefinition<CR>')

@@ -13,6 +13,8 @@ vim.opt.relativenumber = true
 vim.opt.termguicolors = true
 
 vim.opt.wildmode = 'longest:full,full'
+-- complete the longest common match, and allow tabbing the results to fully complete them
+vim.opt.completeopt = 'menuone,longest,preview'
 
 vim.opt.title = true
 
@@ -35,7 +37,7 @@ vim.opt.clipboard = 'unnamedplus' -- Use system clipboard
 
 vim.opt.confirm = true
 
-vim.opt.signcolumn = 'yes:1'
+vim.opt.signcolumn = 'yes:2'
 
 vim.opt.undofile = true -- Persistent undo
 vim.opt.backup = true -- Automatically save backups of file
