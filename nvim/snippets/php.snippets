@@ -1,0 +1,31 @@
+snippet newf "new php file"
+    <?php
+
+    declare(strict_types=1);
+
+snippet pubf "public method"
+
+    public function ${1}(${2}): $3
+    {
+        ${0}
+    }
+
+snippet prof "protected method"
+    protected function ${1}(${2}): $3
+    {
+        ${0}
+    }
+
+snippet prif "private method"
+    protected function ${1}(${2}): $3
+    {
+        ${0}
+    }
+
+snippet pest "new pest test"
+    test('${1}', function (): void {
+
+    });
+
+snippet pest_expect "pest expectation"
+    expect(${1})->toBe(${2});
