@@ -1,0 +1,32 @@
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+
+let mapleader = " "
+let maplocalleader = " "
+
+map <leader>f <Action>(GotoFile)
+map <leader>g <Action>(FindInPath)
+map <leader>b <Action>(Switcher)
+map <leader>tf <Action>(RunClass)
+map <leader>q :q<CR>
+
+map ]b <Action>(NextTab)
+map [b <Action>(PreviousTab)
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+
+# Leave text selected after indenting
+vnoremap < <gv
+vnoremap > >gv
+
+# Preserve cursor position after yank
+vnoremap y myy`y
+
+# When pasting over something, don't copy whatever was replaced
+vnoremap p "_dP
+
+# While in insert mode, double tap ; or , to insert the character at the end of the line
+inoremap ;; <Esc>A;
+inoremap ,, <Esc>A,
+
