@@ -21,6 +21,9 @@ require('lspconfig').volar.setup({
 -- Tailwind CSS
 require('lspconfig').tailwindcss.setup({ capabilities = capabilities })
 
+-- Go
+require('lspconfig').gopls.setup({ capabilities = capabilities })
+
 -- JSON
 require('lspconfig').jsonls.setup({
   capabilities = capabilities,
