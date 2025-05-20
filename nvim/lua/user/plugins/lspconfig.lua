@@ -7,6 +7,9 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 -- PHP
 require('lspconfig').intelephense.setup({ capabilities = capabilities })
 
+-- JavaScript
+require('lspconfig').eslint.setup({ capabilities = capabilities })
+
 -- Python
 require('lspconfig').pyright.setup({ capabilities = capabilities })
 
@@ -37,17 +40,7 @@ require('lspconfig').jsonls.setup({
 -- null-ls
 require('null-ls').setup({
   sources = {
-    require('null-ls').builtins.diagnostics.eslint_d.with({
-      condition = function(utils)
-        return utils.root_has_file({ '.eslintrc.js' })
-      end,
-    }),
     require('null-ls').builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
-    require('null-ls').builtins.formatting.eslint_d.with({
-      condition = function(utils)
-        return utils.root_has_file({ '.eslintrc.js' })
-      end,
-    }),
     require('null-ls').builtins.formatting.prettierd,
     require('null-ls').builtins.diagnostics.phpcs,
     require('null-ls').builtins.diagnostics.phpstan,
